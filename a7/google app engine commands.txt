@@ -1,0 +1,12 @@
+1. python -V
+2. curl https://sdk.cloud.google.com | bash 
+3. gcloud init
+4. login 
+5. enter project id 
+6. gcloud projects list 
+7. git clone https://github.com/GoogleCloudPlatform/python-docs-samples
+8. cd python-docs-samples/appengine/standard/hello-world
+9. sudo apt install python2
+10. dev_appserver.py app.yaml
+11. app runs on localhost:8080
+12. gcloud app deploy --project 

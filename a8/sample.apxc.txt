@@ -1,0 +1,27 @@
+public class Sample2 {
+    public Double var1{get; set;}
+    public Double var2{get; set;}
+    public Double result{get; set;}
+    public String func{get; set;}
+    
+    public Sample2(){
+        
+    }
+    
+    public void find(){
+        if(func == 'add'){
+            result =  var1 + var2;
+        }
+        else if(func == 'sub'){
+            result =  var1 - var2;
+        }
+        else if(func == 'mul'){
+            result =  var1 * var2;
+        }
+        else{
+            result =  var1 / var2;
+        }
+        
+    }
+
+}

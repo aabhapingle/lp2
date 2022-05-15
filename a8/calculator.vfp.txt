@@ -1,0 +1,40 @@
+<apex:page controller="Sample2">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="value1">
+                    </apex:outputLabel>      
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:inputText value="{!var1}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="value2">
+                    </apex:outputLabel>      
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:inputText value="{!var2}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:selectRadio value="{!func}" layout="PageDirection">
+                        <apex:selectOption itemLabel="ADD" itemValue="add"/>
+                        <apex:selectOption itemLabel="SUB" itemValue="sub"/>
+                        <apex:selectOption itemLabel="MUL" itemValue="mul"/>
+                        <apex:selectOption itemLabel="DIV" itemValue="div"/>
+                    </apex:selectRadio>
+                </apex:pageBlockSectionItem>
+                
+                <apex:inputText value="{!result}" id="res" label="Result"/>
+                
+                <apex:commandButton action="{!find}" value="CALCULATE" reRender="res"/>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
